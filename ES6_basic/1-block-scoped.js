@@ -1,12 +1,11 @@
 export default function taskBlock(trueOrFalse) {
-    let task = false;  // Use let instead of var
-    let task2 = true;  // Use let instead of var
+    let task = false;
+    let task2 = true;
   
     if (trueOrFalse) {
-      task = true;     // Assign directly without re-declaring
-      task2 = false;   // Assign directly without re-declaring
+      task = true;
+      task2 = false;
     }
   
     return [task, task2];
   }
-  
