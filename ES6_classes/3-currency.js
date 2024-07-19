@@ -10,11 +10,12 @@ export default class Currency {
     this._code = code;
     this._name = name;
   }
+  // Getter and setter for code
 
   get code() {
     return this._code;
   }
-  // Getter and setter for code
+
 
   set code(value) {
     if (typeof value !== 'string') {
