@@ -16,7 +16,6 @@ export default class Currency {
     return this._code;
   }
 
-
   set code(value) {
     if (typeof value !== 'string') {
       throw new TypeError('code should be a string');
