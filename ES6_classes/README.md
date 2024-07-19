@@ -1,0 +1,1 @@
+This directory contains file 0 through 10 of the ES6 Classes project.
