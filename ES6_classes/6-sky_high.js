@@ -2,7 +2,6 @@ import Building from './5-building';
 
 export default class SkyHighBuilding extends Building {
   constructor(sqft, floors) {
-  // Ensure sqft is passed to the parent class
     super(sqft);
 
     // Type checks
@@ -25,6 +24,6 @@ export default class SkyHighBuilding extends Building {
 
   // Override the evacuationWarningMessage method
   evacuationWarningMessage() {
-    return `Evacuate slowly the ${this._floors} floors.`;
+    return `Evacuate slowly the ${this._floors} floors`;
   }
 }
