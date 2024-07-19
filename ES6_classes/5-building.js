@@ -6,11 +6,6 @@ export default class Building {
     }
 
     this._sqft = sqft;
-
-    // Check if the class is being instantiated directly and not subclassed
-    if (this.constructor === Building) {
-      throw new Error('Class extending Building must override evacuationWarningMessage');
-    }
   }
 
   // Getter for sqft
