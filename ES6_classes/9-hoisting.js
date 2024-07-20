@@ -40,5 +40,3 @@ export class StudentHolberton {
 
 
   export const listOfStudents = [student1, student2, student3, student4, student5];
-const listPrinted = listOfStudents.map(student => student.studentInfo);
-console.log(listPrinted);
