@@ -1,12 +1,12 @@
-function cleanSet(set, startString = '') {
-  if (typeof startString !== 'string') {
-    throw new TypeError('startString must be a string');
+function cleanSet(set, startString) {
+  if (!(set instanceof Set) || typeof startString !== 'string') {
+    throw new TypeError('Invalid arguments');
   }
 
   const result = Array.from(set)
-    .filter((value) => typeof value === 'string' && value.startsWith(startString))
-    .map((value) => value.slice(startString.length))
-    .join('-');
+    .filter((value) => value.startsWith(startString))
+    .map((value) => value.slice(startString.length)) // Remove the startString
+    .join('-'); // Join values with '-'
 
   return result;
 }
