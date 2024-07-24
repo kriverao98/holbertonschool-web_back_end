@@ -1,14 +1,14 @@
-function cleanSet(set, startString) {
-  if (!(set instanceof Set) || typeof startString !== 'string') {
-    throw new TypeError('Invalid arguments');
+export default function cleanSet(set, startString) {
+  if (!startString || typeof startString !== 'string') {
+    return '';
   }
 
-  const result = Array.from(set)
-    .filter((value) => value.startsWith(startString))
-    .map((value) => value.slice(startString.length)) // Remove the startString
-    .join('-'); // Join values with '-'
+  const result = [];
+  for (const value of set) {
+    if (value.startsWith(startString)) {
+      result.push(value.slice(startString.length));
+    }
+  }
 
-  return result;
+  return result.join('-');
 }
-
-export default cleanSet;
