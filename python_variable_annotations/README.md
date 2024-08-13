@@ -1,0 +1,1 @@
+This directory contains task 0 through 9 of "Python - Variable Annotations". 
