@@ -1,3 +1,5 @@
 node_modules
 .eslintrc.js
 __pycache__
+requirements.txt
+venv
