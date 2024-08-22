@@ -5,17 +5,7 @@ import time
 
 
 async def measure_runtime() -> float:
-    """
-    Measure the runtime of the async_comprehension function.
-
-    Returns:
-        float: The total runtime in seconds.
-
-    Comment:
-        This function uses asyncio.gather
-        to execute the async_comprehension function four
-        times and measures the total runtime.
-    """
+    """Measure the runtime of the async_comprehension function."""
 
     start_time = time.time()
     await asyncio.gather(
