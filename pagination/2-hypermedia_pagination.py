@@ -62,7 +62,6 @@ class Server:
 
         return dataset[start_index:end_index]
 
-
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
         """
         Retrieves a dictionary containing hypermedia pagination information.
