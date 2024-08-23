@@ -1,3 +1,3 @@
-#!/usr/bin/env python3
+// Insert a document into the "school" collection with the name "Holberton school"
 
-echo 'db.school.insertOne({"name": "Holberton school"})' | mongo "$1"
+db.school.insertOne({ "name": "Holberton school" });
