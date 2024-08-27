@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from async_comprehension import async_comprehension
+from 1-async_comprehension import async_comprehension
 import asyncio
 import time
 
