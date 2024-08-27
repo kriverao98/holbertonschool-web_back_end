@@ -2,7 +2,7 @@
 """Task test async functions"""
 import time
 import asyncio
-from concurrent_coroutines import wait_n
+from 1-concurrent_coroutines import wait_n
 
 def measure_time(n: int, max_delay: int) -> float:
     """

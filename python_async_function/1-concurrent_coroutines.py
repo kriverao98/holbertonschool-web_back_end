@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Testing async functions"""
-from basic_async_syntax import wait_random
+from 0-basic_async_syntax import wait_random
 from typing import List
 import asyncio
 
