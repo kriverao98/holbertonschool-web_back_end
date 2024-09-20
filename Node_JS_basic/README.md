@@ -1,0 +1,1 @@
+This directory contains files 0 through 7 of the Node.js Basics.
